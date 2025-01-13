@@ -11,3 +11,14 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.bgprofilepic {
+  background-image: url("/profilepic.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+html {
+  scroll-behavior: smooth;
+}
