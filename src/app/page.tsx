@@ -1,5 +1,7 @@
+"use client";
+
 import Button from "@/components/Button";
-import { Smartphone, MailCheck, MapPinHouse, Cake, Linkedin, ArrowUp } from "lucide-react";
+import { Smartphone, MailCheck, MapPinHouse, Cake, Linkedin, ArrowUp, Github } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -7,7 +9,7 @@ export default function Home() {
     <>
       <section
         id="home"
-        className=" lg:w-[80rem] pb-10 mx-auto mb-[5rem] mt-[5rem] bg-mainbg rounded-3xl border border-maingray/50 shadow-2xl shadow-lightblue">
+        className=" lg:w-[80rem] overflow-hidden pb-10 mx-auto mb-[5rem] mt-[5rem] bg-mainbg rounded-3xl border border-maingray/50 shadow-2xl shadow-lightblue">
         <header className=" p-5 mb-7 w-full  flex justify-between items-center">
           <h1 className="font-poppins  text-xl text-mainwhite">
             Pemmer <b>Ferenc</b>
@@ -30,15 +32,18 @@ export default function Home() {
           <Image
             src={"/profilepic"}
             alt="profilepic"
-            width={200}
-            height={200}
-            className="col-span-1 w-[25rem] rounded-full border-8 border-darkblue/80 h-[25rem] shadow-2xl shadow-mainblack mx-auto my-auto bgprofilepic"></Image>
+            width={1}
+            height={1}
+            className="col-span-1 lg:w-[25rem] mb-5 rounded-full border-8 border-darkblue/80 lg:h-[25rem] w-[15rem] h-[15rem] shadow-2xl shadow-mainblack mx-auto my-auto bgprofilepic"></Image>
           <div className="col-span-1 my-auto">
             <p className="font-sintony font-light text-sm text-mainwhite/50">frontend developer</p>
-            <div className="flex gap-5 items-center mb-5">
+            <div className="lg:flex gap-5 items-center mb-5">
               <h1 className="font-poppins font-bold text-4xl text-mainwhite">Ferenc Pemmer</h1>
-              <a href="https://www.linkedin.com/in/ferenc-pemmer-1bb20a207/">
+              <a href="https://www.linkedin.com/in/ferenc-pemmer-1bb20a207/" target="blank">
                 <Linkedin size={30} className="text-darkblue hover:scale-110 transition-all" />
+              </a>
+              <a href="https://github.com/PFeriDev" target="blank">
+                <Github size={30} className="text-darkblue hover:scale-110 transition-all" />
               </a>
             </div>
 
@@ -48,7 +53,7 @@ export default function Home() {
               participate in the full lifecycle of projects and further develop and apply my web development skills. I
               aim to continue growing and learning to contribute to the long-term success of a dynamic team.
             </p>
-            <div className="grid grid-cols-2 gap-5 mt-7">
+            <div className="grid lg:grid-cols-2 gap-5 mt-7">
               <p className="flex items-center gap-2 font-sintony font-medium text-sm text-mainwhite">
                 <span>
                   <Smartphone size={30} className="text-darkblue" />
@@ -74,7 +79,7 @@ export default function Home() {
                 30 years old
               </p>
             </div>
-            <div className="mt-5 flex items-center gap-5">
+            <div className="mt-5 lg:flex items-center gap-5 grid grid-cols-1 mx-auto">
               <a href="#exp">
                 <Button title={"Experiences"}></Button>
               </a>
@@ -373,9 +378,8 @@ export default function Home() {
               className="hover:scale-110 transition-all"></Image>
             <h1 className="font-poppins font-extrabold text-mainwhite text-lg text-center">Laro-Ablak Kft.</h1>
             <p className="font-sintony font-sm text-mainwhite/50 text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum itaque consectetur adipisci repellat
-              ratione quam nisi accusantium nam, enim similique dignissimos neque ea fugiat cum iusto inventore, labore
-              quibusdam. Quam?
+              Website created for a business specializing in door and window installation and shading technology. Built
+              with WordPress CMS based on a custom design.
             </p>
             <div className="mx-auto text-center mt-3">
               <a href="https://laro-ablak.hu/" target="blank" className="text-center mx-auto">
@@ -392,9 +396,8 @@ export default function Home() {
               className="hover:scale-110 transition-all"></Image>
             <h1 className="font-poppins font-extrabold text-mainwhite text-lg text-center">Pwd Portfolio</h1>
             <p className="font-sintony font-sm text-mainwhite/50 text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum itaque consectetur adipisci repellat
-              ratione quam nisi accusantium nam, enim similique dignissimos neque ea fugiat cum iusto inventore, labore
-              quibusdam. Quam?
+              A personal portfolio website in progress, where I plan to showcase my projects in the future and possibly
+              run a blog or something similar.
             </p>
             <div className="mx-auto text-center mt-3">
               <a href="https://pwdportfoliopracticepage.vercel.app/" target="blank" className="text-center mx-auto">
@@ -411,9 +414,8 @@ export default function Home() {
               className="hover:scale-110 transition-all"></Image>
             <h1 className="font-poppins font-extrabold text-mainwhite text-lg text-center">Arato Attila EV.</h1>
             <p className="font-sintony font-sm text-mainwhite/50 text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum itaque consectetur adipisci repellat
-              ratione quam nisi accusantium nam, enim similique dignissimos neque ea fugiat cum iusto inventore, labore
-              quibusdam. Quam?
+              A showcase website created for a self-employed contractor in the construction industry to present
+              reference projects.
             </p>
             <div className="mx-auto text-center mt-3">
               <a href="https://aratoattila.hu/" target="blank" className="text-center mx-auto">
@@ -425,13 +427,13 @@ export default function Home() {
 
         {/* last section */}
         <div className="mt-[5rem] flex items-center justify-center">
-          <h1 className="text-mainwhite  font-poppins font-bold text-2xl w-1/2 text-center ">
-            Koszonom hogy vegigolvastad. Ha tetszettek a latottak keress meg es ismerj meg egy inerju keretein belul
-            akar.
+          <h1 className="text-mainwhite/50  font-poppins font-bold text-xl lg:w-1/2 p-5 text-center ">
+            Thank you for reading! If you liked what you saw, feel free to get to know me through a conversation, either
+            in person or online!
           </h1>
         </div>
       </section>
-      <div className=" fixed bottom-5 right-20">
+      <div className="hidden lg:block fixed bottom-5 right-20">
         <a href="#home">
           <ArrowUp
             size={50}
