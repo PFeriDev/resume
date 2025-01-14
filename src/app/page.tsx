@@ -3,6 +3,7 @@
 import Button from "@/components/Button";
 import { Smartphone, MailCheck, MapPinHouse, Cake, Linkedin, ArrowUp, Github } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -16,12 +17,12 @@ export default function Home() {
           </h1>
 
           <div className="flex gap-x-5 items-center">
-            <a href="/hu">
+            <Link href="/hu">
               <Image src="/flags/huflag.png" alt="hu flag" width={40} height={30} className="cursor-pointer"></Image>
-            </a>
-            <a href="/">
+            </Link>
+            <Link href="/">
               <Image src="/flags/uk-flag.gif" alt="uk flag" width={40} height={30} className="cursor-pointer"></Image>
-            </a>
+            </Link>
           </div>
         </header>
         {/* About section */}
@@ -168,8 +169,8 @@ export default function Home() {
                     created websites using both CMS platforms and programming languages, as detailed below.
                     Additionally, I designed graphic materials and handled equipment maintenance. During my years in the
                     metal industry, I developed skills such as precision and problem-solving, which are equally
-                    essential in the field of web development. Overall, I believe that by leveraging these experiences,
-                    I can become a valuable member of a team and contribute to the success of the company's digital
+                    essential in the field of web development. Overall I believe that by leveraging these experiences I
+                    can become a valuable member of a team and contribute to the success of the companys digital
                     projects.
                   </p>
                 </div>

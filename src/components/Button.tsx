@@ -1,7 +1,4 @@
 "use client";
-interface ButtonProps {
-  title: string;
-}
 
 function Button({ title }: { title: string }) {
   return (
