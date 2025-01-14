@@ -1,11 +1,7 @@
 import type { Config } from "tailwindcss";
 
 export default {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}", "./app/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],
@@ -37,4 +33,11 @@ export default {
     },
   },
   plugins: [],
+  corePlugins: {
+    // Alapértelmezett Tailwind beállítások
+    preflight: true,
+  },
+  future: {
+    // Enable `future` features in Tailwind CSS
+  },
 } satisfies Config;
