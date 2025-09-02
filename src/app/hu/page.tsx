@@ -37,7 +37,7 @@ export default function Home() {
             height={1}
             className="col-span-1 lg:w-[25rem] mb-5 rounded-full border-8 border-darkblue/80 lg:h-[25rem] w-[15rem] h-[15rem] shadow-2xl shadow-mainblack mx-auto my-auto bgprofilepic"></Image>
           <div className="col-span-1 my-auto">
-            <p className="font-sintony font-light text-sm text-mainwhite/50">frontend fejlesztő</p>
+            <p className="font-sintony font-light text-sm text-mainwhite/50">Informatikus</p>
             <div className="lg:flex gap-5 items-center mb-5">
               <h1 className="font-poppins font-bold text-4xl text-mainwhite">Pemmer Ferenc</h1>
               <a href="https://www.linkedin.com/in/ferenc-pemmer-1bb20a207/" target="blank">
@@ -49,11 +49,7 @@ export default function Home() {
             </div>
 
             <p className="font-sintony font-normal text-sm text-mainwhite">
-              Célom, hogy full-stack fejlesztőként kreatív és modern webes megoldások készítésében vegyek részt,
-              miközben tovább mélyítem tudásomat a legújabb technológiákban. Egy olyan pozíciót keresek, ahol részt
-              vehetek projektek teljes életciklusában és ahol fejleszthetem illetve kamatoztathatom a webfejlesztési
-              tudásom. Szeretnék tovább fejlődni és tanulni, hogy hosszútávon hozzájáruljak egy dinamikus csapat
-              sikeréhez.
+              Célom, hogy az informatikai területen helyezkedjek el. Olyan pozíciót keresek, ahol kamatoztathatom tapasztalataimat, miközben folyamatosan bővíthetem szakmai tudásomat. Szeretnék hozzájárulni egy megbízható és hatékony informatikai környezet fenntartásához, és hosszú távon értékes tagja lenni egy stabil, szakmai fejlődést támogató csapatnak.
             </p>
             <div className="grid lg:grid-cols-2 gap-5 mt-7">
               <p className="flex items-center gap-2 font-sintony font-medium text-sm text-mainwhite">
@@ -78,7 +74,7 @@ export default function Home() {
                 <span>
                   <Cake size={30} className="text-darkblue" />
                 </span>
-                30
+                31
               </p>
             </div>
             <div className="mt-5 lg:flex items-center gap-5 grid grid-cols-1 mx-auto">
@@ -112,8 +108,8 @@ export default function Home() {
               <div className="pl-7 mt-3 pb-6 border-b-2 border-maingray/50">
                 <h1 className="font-poppins font-bold text-mainwhite mb-2 text-xl">Gazdaságinformatika</h1>
                 <p className="font-sintony font-normal text-mainwhite text-sm">
-                  Jelenleg a dunaújvárosi egyetemen vagyok levelezős hallgató. A 4. szemeszterem töltöm éppen, a
-                  diplomámat várhatóan 2027 ben szerzem meg.
+                  Jelenleg a dunaújvárosi egyetemen vagyok levelezős hallgató. Az 5. félévet csinálom éppen, a
+                  diplomámat várhatóan 2027 elején szerzem meg.
                 </p>
               </div>
               <div className="border-l border-maingray/50 mt-10">
@@ -167,14 +163,9 @@ export default function Home() {
                 <div className="pl-7 mt-3 pb-5">
                   <h1 className="font-poppins font-bold text-mainwhite mb-2 text-xl">IK METAL Kft. , Szabadúszó</h1>
                   <p className="font-sintony font-normal text-mainwhite text-sm">
-                    Jelenleg az IK METÁL Kft.-nél dolgozom, azonban szeretném IT területen folytatni a karrieremet,
-                    különösen olyan szerepkörben, ahol lehetőségem van webfejlesztésben részt venni. Korábbi
-                    tapasztalataim során weboldalakat készítettem CMS rendszerekkel és programnyelvekkel egyaránt amiket
-                    lentebb részletezek. Ezen kívül grafikai anyagokat terveztem és eszközkarbantartással is
-                    foglalkoztam. A fémiparban eltöltött évek során olyan készségeket sajátítottam el, mint a precizitás
-                    és a problémamegoldás, amelyek alapvető fontosságúak a webfejlesztés területén is. Összességében
-                    hiszem, hogy ezeket a tapasztalatokat felhasználva hasznos tagja lehetek egy csapatnak, és
-                    hozzájárulhatok a vállalat sikeres digitális projektjeihez.
+                    Jelenleg az IK METÁL Kft.-nél dolgozom, azonban szeretném karrieremet teljes mértékben az informatikai területen folytatni. Korábbi tapasztalataim során weboldalakat készítettem és tartottam karban különböző CMS rendszerekkel és programnyelvekkel, emellett grafikai anyagokat terveztem, valamint informatikai eszközök karbantartásával is foglalkoztam.
+
+A fémiparban eltöltött évek során olyan készségeket sajátítottam el, mint a precizitás, a problémamegoldás és a felelősségteljes munkavégzés, amelyek az IT feladatok ellátásában is nélkülözhetetlenek. Összességében hiszem, hogy tapasztalataim és elhivatottságom révén értékes tagja lehetek egy informatikai csapatnak, és hozzájárulhatok a rendszerek megbízható működéséhez és a vállalat sikeréhez.
                   </p>
                 </div>
               </div>
@@ -391,6 +382,30 @@ export default function Home() {
               </a>
             </div>
           </div>
+
+
+          <div className="card w-[22rem] mx-auto mb-5 bg-[#252525] p-5 rounded-xl border border-darkblue/30 shadow-sm shadow-darkblue/50 hover:shadow-xl hover:shadow-darkblue/50 transition-all duration-300">
+            <Image
+              src="/projectpics/project4.png"
+              width={400}
+              height={350}
+              alt="projectpicture"
+              className="hover:scale-110 transition-all"></Image>
+            <h1 className="font-poppins font-extrabold text-mainwhite text-lg text-center">Csősz Önkormányzat</h1>
+            <p className="font-sintony font-sm text-mainwhite/50 text-center">
+               Hivatalos önkormányzati weboldal, dinamikus tartalmakkal, dokumentumkezeléssel, űrlapokkal.
+            </p>
+            <div className="mx-auto text-center mt-3">
+              <a href="https://www.csosz.hu" target="blank" className="text-center mx-auto">
+                <Button title={"Live"}></Button>
+              </a>
+            </div>
+          </div>
+
+
+
+
+          
           <div className="card w-[22rem] mx-auto mb-5 bg-[#252525] p-5 rounded-xl border border-darkblue/30 shadow-sm shadow-darkblue/50 hover:shadow-xl hover:shadow-darkblue/50 transition-all duration-300">
             <Image
               src="/projectpics/project2.png"
